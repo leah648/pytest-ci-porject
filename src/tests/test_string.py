@@ -7,7 +7,7 @@ from utils.strings_utils import has_min_length
 
 @pytest.mark.parametrize("email, expected", [
     ("test@example.com", True),
-    ("invalid-email", True),
+    ("invalid-email", False),
     ("another.test@domain.com", True),
     ("@missingusername.com", False)
 ])
